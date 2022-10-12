@@ -85,7 +85,7 @@ public class availableProductsWindow implements ActionListener {
         AvailableProductsFrame.getContentPane().setBackground(new Color(115,215,255));
         AvailableProductsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         AvailableProductsFrame.setResizable(false);
-        ImageIcon icon = new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\logo.png");
+        ImageIcon icon = new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\logo.png");
         AvailableProductsFrame.setIconImage(icon.getImage());
         
         // Creating Header Panel
@@ -164,7 +164,7 @@ public class availableProductsWindow implements ActionListener {
     
        /// Header Image
        JLabel card1IconLabel = new JLabel();
-       ImageIcon NormalOneNineInchIcon = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\9InchBlock.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT)); 
+       ImageIcon NormalOneNineInchIcon = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\9InchBlock.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT)); 
        card1IconLabel.setIcon(NormalOneNineInchIcon);
        
         // product description 
@@ -268,7 +268,7 @@ public class availableProductsWindow implements ActionListener {
  
 /// Header Image
     JLabel card2IconLabel = new JLabel();
-    ImageIcon cardTwoIcon = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\6InchBlock.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT)); 
+    ImageIcon cardTwoIcon = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\6InchBlock.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT)); 
     card2IconLabel.setIcon(cardTwoIcon);
        
         // product description 
@@ -371,7 +371,7 @@ public class availableProductsWindow implements ActionListener {
  
 /// Header Image
        JLabel card3IconLabel = new JLabel();
-       ImageIcon cardThreeIcon = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\9InchBlock.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT)); 
+       ImageIcon cardThreeIcon = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\9InchBlock.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT)); 
        card3IconLabel.setIcon(cardThreeIcon);
        
         // product description 
@@ -478,7 +478,7 @@ public class availableProductsWindow implements ActionListener {
     
 /// Header Image
        JLabel card4IconLabel = new JLabel();
-       ImageIcon cardFourthIcon = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\6InchBlock.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT)); 
+       ImageIcon cardFourthIcon = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\6InchBlock.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT)); 
        card4IconLabel.setIcon(cardFourthIcon);
        
         // product description 

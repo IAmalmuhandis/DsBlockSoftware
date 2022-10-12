@@ -49,7 +49,7 @@ public class HomeWindow implements ActionListener{
     homeFrame.setLayout(new BorderLayout());
     homeFrame.setResizable(false);
     homeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    ImageIcon icon = new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\logo.png");
+    ImageIcon icon = new ImageIcon("C:\\Users\\mac\\DsBlockSoftware\\src\\img\\logo.png");
     homeFrame.setIconImage(icon.getImage());
     
     // Creating Menu Bar
@@ -86,7 +86,7 @@ public class HomeWindow implements ActionListener{
     
         // Creating home window Header Text
         JLabel logoPic = new JLabel();
-        ImageIcon logoImage = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\logo.png").getImage().getScaledInstance(150, 150, Image.SCALE_DEFAULT));
+        ImageIcon logoImage = new ImageIcon(new ImageIcon("C:\\Users\\mac\\DsBlockSoftware\\src\\img\\logo.png").getImage().getScaledInstance(150, 150, Image.SCALE_DEFAULT));
 
       
         logoPic.setBounds(80,4,400,200);
@@ -104,7 +104,7 @@ public class HomeWindow implements ActionListener{
         // creating home page picture
       //  Border border = BorderFactory.createLineBorder(new Color(115,215,255),8);
         JLabel sidePicture = new JLabel();
-        ImageIcon HeaderImage = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\headerCircledImage.png").getImage().getScaledInstance(180,180, Image.SCALE_DEFAULT));
+        ImageIcon HeaderImage = new ImageIcon(new ImageIcon("C:\\Users\\mac\\DsBlockSoftware\\src\\img\\headerCircledImage.png").getImage().getScaledInstance(180,180, Image.SCALE_DEFAULT));
         
         sidePicture.setBounds(800,15,250,250); 
         sidePicture.setIcon(HeaderImage);
@@ -137,7 +137,7 @@ public class HomeWindow implements ActionListener{
          // creating home page picture
       //  Border border = BorderFactory.createLineBorder(new Color(115,215,255),8);
         JLabel questionMarkLabel = new JLabel();
-        ImageIcon questionMarkPic = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\questionMark.png").getImage().getScaledInstance(140,140, Image.SCALE_DEFAULT));
+        ImageIcon questionMarkPic = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\questionMark.png").getImage().getScaledInstance(140,140, Image.SCALE_DEFAULT));
         
         questionMarkLabel.setBounds(600,10,250,200); 
         questionMarkLabel.setIcon(questionMarkPic);
