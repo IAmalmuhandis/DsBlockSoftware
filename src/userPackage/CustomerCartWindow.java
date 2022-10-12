@@ -71,7 +71,7 @@ public class CustomerCartWindow implements ActionListener {
         CartsFrame.getContentPane().setBackground(new Color(115,215,255));
         CartsFrame.setResizable(false);
         CartsFrame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        ImageIcon icon = new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\logo.png");
+        ImageIcon icon = new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\logo.png");
         CartsFrame.setIconImage(icon.getImage());
         
         // Creating Header Panel

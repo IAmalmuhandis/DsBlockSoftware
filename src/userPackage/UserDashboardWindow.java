@@ -68,7 +68,7 @@ public class UserDashboardWindow implements ActionListener {
      CustomerFrame.setLayout(new BorderLayout());
      CustomerFrame.setResizable(false);
      CustomerFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-     ImageIcon icon = new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\logo.png");
+     ImageIcon icon = new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\logo.png");
      CustomerFrame.setIconImage(icon.getImage());
     
      // Creating Side Bar
@@ -86,7 +86,7 @@ public class UserDashboardWindow implements ActionListener {
     // creating profile pic
    // Border border = BorderFactory.createLineBorder(new Color(115,215,255),8);
         JLabel ProfilePicLabel = new JLabel();
-        ImageIcon HeaderImage = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\" + profile_picture).getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
+        ImageIcon HeaderImage = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\" + profile_picture).getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
         ProfilePicLabel.setBounds(50,50,200,300); 
         ProfilePicLabel.setForeground(new Color(3,37,126));
         ProfilePicLabel.setVerticalTextPosition(JLabel.BOTTOM);
@@ -116,7 +116,7 @@ public class UserDashboardWindow implements ActionListener {
     // Creating products panel content
      // Header image
      JLabel ProductsIconLabel = new JLabel();
-        ImageIcon ProductsIcon = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\ProductsIconPic.png").getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT)); 
+        ImageIcon ProductsIcon = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\ProductsIconPic.png").getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT)); 
         ProductsIconLabel.setIcon(ProductsIcon);
         ProductsIconLabel.setVerticalAlignment(JLabel.CENTER);
         ProductsIconLabel.setHorizontalAlignment(JLabel.CENTER);
@@ -140,7 +140,7 @@ public class UserDashboardWindow implements ActionListener {
     // creating cart image
      // Header image
      JLabel cartIconLabel = new JLabel();
-        ImageIcon CartIcon = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\ShoppingCartIcon.png").getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT)); 
+        ImageIcon CartIcon = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\ShoppingCartIcon.png").getImage().getScaledInstance(100, 100, Image.SCALE_DEFAULT)); 
         cartIconLabel.setIcon(CartIcon);
         cartIconLabel.setVerticalAlignment(JLabel.CENTER);
         cartIconLabel.setHorizontalAlignment(JLabel.CENTER);

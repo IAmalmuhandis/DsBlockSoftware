@@ -136,7 +136,7 @@ public class CustomerProfileWindow implements ActionListener {
     
     //creating top profile body content
         
-        icon =    new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\" + profile_picture).getImage().getScaledInstance(150, 150, Image.SCALE_DEFAULT));
+        icon =    new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\" + profile_picture).getImage().getScaledInstance(150, 150, Image.SCALE_DEFAULT));
     
         JLabel formHeaderText = new JLabel();
     formHeaderText.setText("Edit Your Profile ");

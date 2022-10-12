@@ -58,7 +58,7 @@ public class AdminDashboardWindow implements ActionListener {
     
     // Creating Side bar Text
      JLabel headerText = new JLabel();
-        ImageIcon HeaderImage = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\adminPic2.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        ImageIcon HeaderImage = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\adminPic2.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
         headerText.setText("ADMIN");
         headerText.setForeground(new Color(115,215,255));
         headerText.setFont(new Font("times new roman", Font.BOLD, 30));
@@ -75,7 +75,7 @@ public class AdminDashboardWindow implements ActionListener {
     
     // Creating total Customers panel content
     JLabel totalCustomersHeaderText = new JLabel();
-    ImageIcon totalCustomersImage = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\customers.png").getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
+    ImageIcon totalCustomersImage = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\customers.png").getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
     totalCustomersHeaderText.setIcon(totalCustomersImage);
     totalCustomersHeaderText.setVerticalAlignment(JLabel.CENTER);
     totalCustomersHeaderText.setHorizontalAlignment(JLabel.CENTER);
@@ -90,32 +90,7 @@ public class AdminDashboardWindow implements ActionListener {
     // adding elements to total customers panel 
     totalCustomers.add(totalCustomersHeaderText, BorderLayout.CENTER);
     totalCustomers.add(viewTotalCustomersBtn, BorderLayout.SOUTH);
-//        
-//    // Total Orders panel
-//    JPanel totalOrdersPanel = new JPanel();
-//    totalOrdersPanel.setBackground(new Color(3,37,126));
-//    totalOrdersPanel.setBounds(310, 100,250, 250);
-//    totalOrdersPanel.setLayout(new BorderLayout());
-//    
-//     // Creating total Orders panel content
-//    JLabel totalOrdersHeaderText = new JLabel();
-//       ImageIcon totalOrdersImage = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\ordersPic.png").getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
-//    totalOrdersHeaderText.setIcon(totalOrdersImage);
-//
-//    totalOrdersHeaderText.setVerticalAlignment(JLabel.CENTER);
-//    totalOrdersHeaderText.setHorizontalAlignment(JLabel.CENTER);
-//    
-//    
-//    // creating view total Orders button
-//    viewTotalOrdersBtn = new JButton("<html><body><p>Total Orders: <span style='color: red; font-size: 15;'>("+init.countTableRows("orders_table", "") + ") </span> " + "</p></body></html>");
-//    viewTotalOrdersBtn.setFocusable(false);
-//    viewTotalOrdersBtn.setForeground(new Color(3,37,126));
-//    viewTotalOrdersBtn.setPreferredSize(new Dimension(0,50));
-//    viewTotalOrdersBtn.addActionListener(this);
-    
-      // adding elements to total Orders panel 
-//        totalOrdersPanel.add(totalOrdersHeaderText, BorderLayout.CENTER);
-//        totalOrdersPanel.add( viewTotalOrdersBtn, BorderLayout.SOUTH);
+
     
     // Edit Manage Products Panel
      JPanel manageProducts = new JPanel();
@@ -125,7 +100,7 @@ public class AdminDashboardWindow implements ActionListener {
     
      // Creating manage products panel content
     JLabel manageProductsHeaderText = new JLabel();
-    ImageIcon manageImage = new ImageIcon(new ImageIcon("C:\\Users\\Zarah\\Documents\\NetBeansProjects\\DsBlockProject\\src\\dsblockproject\\img\\managePic.png").getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
+    ImageIcon manageImage = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\managePic.png").getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
     manageProductsHeaderText.setIcon(manageImage);
     manageProductsHeaderText.setVerticalAlignment(JLabel.CENTER);
     manageProductsHeaderText.setHorizontalAlignment(JLabel.CENTER);
