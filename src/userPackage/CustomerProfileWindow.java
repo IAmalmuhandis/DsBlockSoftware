@@ -136,7 +136,7 @@ public class CustomerProfileWindow implements ActionListener {
     
     //creating top profile body content
         
-        icon =    new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\" + profile_picture).getImage().getScaledInstance(150, 150, Image.SCALE_DEFAULT));
+        icon =    new ImageIcon(new ImageIcon("C:\\\\Users\\\\ZAHRA AHMED GARBA\\\\Documents\\\\GitHub\\\\DsBlockSoftware\\\\src\\\\img\\\\" + profile_picture).getImage().getScaledInstance(150, 150, Image.SCALE_DEFAULT));
     
         JLabel formHeaderText = new JLabel();
     formHeaderText.setText("Edit Your Profile ");
@@ -177,10 +177,10 @@ public class CustomerProfileWindow implements ActionListener {
     centerForm.setLayout(null);
     
     // creating fields for center form
-    JLabel uploadPictureLabel = new JLabel("Upload Profile Picture:");
-    uploadPictureLabel.setForeground(new Color(3,37,126));
-    uploadPictureLabel.setBounds(20,30, 200,40);
-    
+//    JLabel uploadPictureLabel = new JLabel("Upload Profile Picture:");
+//    uploadPictureLabel.setForeground(new Color(3,37,126));
+//    uploadPictureLabel.setBounds(20,30, 200,40);
+//    
     // creating upload button
     ChoosePicFileBtn = new JButton("Upload");
     ChoosePicFileBtn.setForeground(new Color(3,37,126));
@@ -223,8 +223,8 @@ public class CustomerProfileWindow implements ActionListener {
      EditProfileBtn.addActionListener(this);
     
     // adding content into center form
-    centerForm.add(uploadPictureLabel);
-    centerForm.add(ChoosePicFileBtn);
+//    centerForm.add(uploadPictureLabel);
+//    centerForm.add(ChoosePicFileBtn);
     centerForm.add(firstNameLabel);
     centerForm.add(firstName);
     centerForm.add(lastNameLabel);
@@ -302,10 +302,9 @@ public class CustomerProfileWindow implements ActionListener {
   
     }
     
-//    CustomerProfileFrame.dispose();
-//    new CustomerProfileWindow("abubakaralmuhandis@gmail.com");     
+  
     }else if(e.getSource() == EditProfileBtn){
-           String insertProfilePicQuery = "UPDATE customers_table SET `profile_picture` = '"+UserProfilePath.substring(UserProfilePath.lastIndexOf("img") + 4)+"', `first_name` = '"+updated_firstName+"', `last_name` = '"+updated_lastName+"', `phone_number` = '"+updated_phoneNumber+"' WHERE(`email_address` = '"+loggedInUsername+"') ";
+           String insertProfilePicQuery = "UPDATE customers_table SET `first_name` = '"+updated_firstName+"', `last_name` = '"+updated_lastName+"', `phone_number` = '"+updated_phoneNumber+"' WHERE(`email_address` = '"+loggedInUsername+"') ";
         try {
              System.out.println(insertProfilePicQuery);
             statement.executeUpdate(insertProfilePicQuery);

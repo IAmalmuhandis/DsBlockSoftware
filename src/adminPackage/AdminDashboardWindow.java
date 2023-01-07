@@ -58,7 +58,7 @@ public class AdminDashboardWindow implements ActionListener {
     
     // Creating Side bar Text
      JLabel headerText = new JLabel();
-        ImageIcon HeaderImage = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\adminPic2.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
+        ImageIcon HeaderImage = new ImageIcon(new ImageIcon("C:\\\\Users\\\\ZAHRA AHMED GARBA\\\\Documents\\\\GitHub\\\\DsBlockSoftware\\\\src\\\\img\\\\adminPic2.png").getImage().getScaledInstance(120, 120, Image.SCALE_DEFAULT));
         headerText.setText("ADMIN");
         headerText.setForeground(new Color(115,215,255));
         headerText.setFont(new Font("times new roman", Font.BOLD, 30));
@@ -75,7 +75,7 @@ public class AdminDashboardWindow implements ActionListener {
     
     // Creating total Customers panel content
     JLabel totalCustomersHeaderText = new JLabel();
-    ImageIcon totalCustomersImage = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\customers.png").getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
+    ImageIcon totalCustomersImage = new ImageIcon(new ImageIcon("C:\\\\Users\\\\ZAHRA AHMED GARBA\\\\Documents\\\\GitHub\\\\DsBlockSoftware\\\\src\\\\img\\\\customers.png").getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
     totalCustomersHeaderText.setIcon(totalCustomersImage);
     totalCustomersHeaderText.setVerticalAlignment(JLabel.CENTER);
     totalCustomersHeaderText.setHorizontalAlignment(JLabel.CENTER);
@@ -100,7 +100,7 @@ public class AdminDashboardWindow implements ActionListener {
     
      // Creating manage products panel content
     JLabel manageProductsHeaderText = new JLabel();
-    ImageIcon manageImage = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\managePic.png").getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
+    ImageIcon manageImage = new ImageIcon(new ImageIcon("C:\\\\Users\\\\ZAHRA AHMED GARBA\\\\Documents\\\\GitHub\\\\DsBlockSoftware\\\\src\\\\img\\\\managePic.png").getImage().getScaledInstance(180, 180, Image.SCALE_DEFAULT));
     manageProductsHeaderText.setIcon(manageImage);
     manageProductsHeaderText.setVerticalAlignment(JLabel.CENTER);
     manageProductsHeaderText.setHorizontalAlignment(JLabel.CENTER);

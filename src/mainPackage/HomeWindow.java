@@ -36,48 +36,44 @@ import javax.swing.JPanel;
 public class HomeWindow implements ActionListener{
      JFrame homeFrame;
      JButton getStartedBtn;
+     JMenu menu;
      JMenuItem SignUp;
      JMenuItem SignIn;
-     JMenuItem Developers;
-     JMenuItem AboutUs;
+   
     public HomeWindow(){
         // Creating the Home window frame
     Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-    homeFrame = new JFrame("DS Block Industry");
+    homeFrame = new JFrame("Dan Sani Block Industry");
     homeFrame.setBounds(dim.width/15, dim.height/14,1200, 660);
     homeFrame.getContentPane().setBackground(new Color(115,215,255));
     homeFrame.setLayout(new BorderLayout());
     homeFrame.setResizable(false);
     homeFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    ImageIcon icon = new ImageIcon("C:\\Users\\mac\\DsBlockSoftware\\src\\img\\logo.png");
+    ImageIcon icon = new ImageIcon("C:\\Users\\ZAHRA AHMED GARBA\\Documents\\GitHub\\DsBlockSoftware\\src\\img\\logo.png");
     homeFrame.setIconImage(icon.getImage());
     
     // Creating Menu Bar
     JMenuBar menuBar = new JMenuBar();
-    menuBar.setSize(300, 30);
+    menuBar.setSize(10, 10);
+    
+     menu = new JMenu("Menu");
     SignUp = new JMenuItem("SignUp");
     SignIn = new JMenuItem("SignIn");
-    Developers = new JMenuItem("Developers");
-    AboutUs = new JMenuItem("About Us");
-    
+  
     // Adding actionlisteners to menu items
     SignUp.addActionListener(this);
     SignIn.addActionListener(this);
-    Developers.addActionListener(this);
-    AboutUs.addActionListener(this);
+  
     
     SignUp.setMnemonic(KeyEvent.VK_S);
     SignIn.setMnemonic(KeyEvent.VK_L);
-    Developers.setMnemonic(KeyEvent.VK_D);
-    AboutUs.setMnemonic(KeyEvent.VK_A);
-    
+   
     
       // Adding elements to menuBar
-      menuBar.add(SignUp);
-      menuBar.add(SignIn);
-     menuBar.add(Developers);
-     menuBar.add(AboutUs);
-    
+      menu.add(SignUp);
+      menu.add(SignIn);
+      menuBar.add(menu);
+   
     // Creating Header Panel
     JPanel HeaderPanel = new JPanel();
     HeaderPanel.setBackground(new Color(3,37,126));
@@ -86,7 +82,7 @@ public class HomeWindow implements ActionListener{
     
         // Creating home window Header Text
         JLabel logoPic = new JLabel();
-        ImageIcon logoImage = new ImageIcon(new ImageIcon("C:\\Users\\mac\\DsBlockSoftware\\src\\img\\logo.png").getImage().getScaledInstance(150, 150, Image.SCALE_DEFAULT));
+        ImageIcon logoImage = new ImageIcon(new ImageIcon("C:\\Users\\ZAHRA AHMED GARBA\\Documents\\GitHub\\DsBlockSoftware\\src\\img\\logo.png").getImage().getScaledInstance(150, 150, Image.SCALE_DEFAULT));
 
       
         logoPic.setBounds(80,4,400,200);
@@ -94,17 +90,25 @@ public class HomeWindow implements ActionListener{
         // main logo 
         
         
-        // Creating home window Header Paragraph text
+        // Creating home window Header  text
+        JLabel headerText = new JLabel();
+        headerText.setText("DAN SANI BLOCK");
+        headerText.setForeground(Color.white);
+        headerText.setFont(new Font("algerian", Font.BOLD, 25));
+        headerText.setBounds(70,140,400,100);
+        
+        
+     // Creating home window Header Paragraph text
         JLabel headerParagraphText = new JLabel();
         headerParagraphText.setText("Quality over Quantity..");
         headerParagraphText.setForeground(Color.white);
         headerParagraphText.setFont(new Font("MV Boli", Font.ITALIC, 15));
-        headerParagraphText.setBounds(90,140,400,100);
+        headerParagraphText.setBounds(90,157,400,100);
         
         // creating home page picture
       //  Border border = BorderFactory.createLineBorder(new Color(115,215,255),8);
         JLabel sidePicture = new JLabel();
-        ImageIcon HeaderImage = new ImageIcon(new ImageIcon("C:\\Users\\mac\\DsBlockSoftware\\src\\img\\headerCircledImage.png").getImage().getScaledInstance(180,180, Image.SCALE_DEFAULT));
+        ImageIcon HeaderImage = new ImageIcon(new ImageIcon("C:\\Users\\ZAHRA AHMED GARBA\\Documents\\GitHub\\DsBlockSoftware\\src\\img\\headerCircledImage.png").getImage().getScaledInstance(180,180, Image.SCALE_DEFAULT));
         
         sidePicture.setBounds(800,15,250,250); 
         sidePicture.setIcon(HeaderImage);
@@ -115,7 +119,7 @@ public class HomeWindow implements ActionListener{
         getStartedBtn = new JButton("Get Started!");
         getStartedBtn.setForeground(new Color(3,37,126));
         getStartedBtn.setFont(new Font("MV Boli", Font.BOLD,15));
-        getStartedBtn.setBounds(130,210,130,30);
+        getStartedBtn.setBounds(150,230,130,30);
         getStartedBtn.setFocusable(false);
         getStartedBtn.addActionListener(this);
      
@@ -137,7 +141,7 @@ public class HomeWindow implements ActionListener{
          // creating home page picture
       //  Border border = BorderFactory.createLineBorder(new Color(115,215,255),8);
         JLabel questionMarkLabel = new JLabel();
-        ImageIcon questionMarkPic = new ImageIcon(new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\questionMark.png").getImage().getScaledInstance(140,140, Image.SCALE_DEFAULT));
+        ImageIcon questionMarkPic = new ImageIcon(new ImageIcon("C:\\Users\\ZAHRA AHMED GARBA\\Documents\\GitHub\\DsBlockSoftware\\src\\img\\questionMark.png").getImage().getScaledInstance(140,140, Image.SCALE_DEFAULT));
         
         questionMarkLabel.setBounds(600,10,250,200); 
         questionMarkLabel.setIcon(questionMarkPic);
@@ -145,7 +149,7 @@ public class HomeWindow implements ActionListener{
         
         // Creating home window Header Paragraph text
         JLabel BodyParagraphText = new JLabel();
-        BodyParagraphText.setText("<html><body><div style='text-align:center;'>Ds Block Industry is the number one Block company in katsina state.<br>"
+        BodyParagraphText.setText("<html><body><div style='text-align:center;'>Dan Sani Block Industry is the number one Block company in katsina state.<br>"
                 + "We provide our Customers with Qualitative Blocks and also make it easier for them"
                 + " to order blocks even from inside their rooms, and we get the Blocks delivered as fast as possible"
                 + " to their desired location</div></body></html>");
@@ -159,6 +163,7 @@ public class HomeWindow implements ActionListener{
  
     // Adding elements to HeaderPanel
     HeaderPanel.add(logoPic);
+    HeaderPanel.add(headerText);
     HeaderPanel.add(headerParagraphText);
     HeaderPanel.add(getStartedBtn);
     HeaderPanel.add(sidePicture);
@@ -173,7 +178,6 @@ public class HomeWindow implements ActionListener{
     homeFrame.add(BodyPanel, BorderLayout.CENTER);
     homeFrame.setJMenuBar(menuBar);
     homeFrame.setVisible(true);
-    
     }
     @Override
     public void actionPerformed(ActionEvent e){
@@ -191,8 +195,6 @@ public class HomeWindow implements ActionListener{
             } catch (SQLException ex) {
                 Logger.getLogger(HomeWindow.class.getName()).log(Level.SEVERE, null, ex);
             }
-        }else if(e.getSource() == Developers){
-         System.out.println("You Clicked on Developers page");
         }else if(e.getSource()== getStartedBtn){
          int userResponse = JOptionPane.showConfirmDialog(homeFrame,"Do you aleardy have an Account?", "Info", JOptionPane.YES_NO_CANCEL_OPTION);
          if(userResponse == 0){

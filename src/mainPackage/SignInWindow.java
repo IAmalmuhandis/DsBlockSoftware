@@ -54,7 +54,7 @@ public class SignInWindow implements ActionListener{
     SignInFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     SignInFrame.setLayout(new BorderLayout());
     SignInFrame.setResizable(false);
-    ImageIcon icon = new ImageIcon("C:\\\\Users\\\\mac\\\\DsBlockSoftware\\\\src\\\\img\\\\logo.png");
+    ImageIcon icon = new ImageIcon("C:\\\\Users\\\\ZAHRA AHMED GARBA\\\\Documents\\\\GitHub\\\\DsBlockSoftware\\\\src\\\\img\\\\logo.png");
     SignInFrame.setIconImage(icon.getImage());
     
     // Creating SignUp Header

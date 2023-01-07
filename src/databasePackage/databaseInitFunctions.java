@@ -36,7 +36,7 @@ public class databaseInitFunctions {
         String url = "jdbc:mysql://localhost:3306/dsblock";
     
     // establish connection opject
-        Connection conn = DriverManager.getConnection(url, "root", "12345678");
+        Connection conn = DriverManager.getConnection(url, "root", "");
     
            return conn;
        
